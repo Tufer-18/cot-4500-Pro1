@@ -14,6 +14,6 @@ def approximation(x0, tol = 0.000001):
     print(f"{iter} : {x}")
     diff = abs(x-y)
   print(f"\nConvergence after {iter} iterations")
-  return x
+  return ""
 
 print(approximation(1.5))
