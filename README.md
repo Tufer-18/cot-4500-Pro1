@@ -4,3 +4,4 @@ The main folder contains the general algorithms without values put in to make th
 The test folder contains the methods with specific inputs as seen in our lecture PowerPoints.
 To use a method, copy and paste your method of choice into a compiler (along with any necessary libraries).
 NOTE: All methods require the use of Math, but Newton also requires sympy, it should be copied along with the rest of the method.
+NOTE 2: In the test folder for fixed point, 2 different equations exist for testing, make sure to uncomment the equation you wish to test or else the method will not work.
