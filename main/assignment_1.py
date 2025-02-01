@@ -1,6 +1,7 @@
 import math
 
-def approximation(x0, tol = 0.000001):
+#Approximation----------------------------------------------------------------------
+def approximation(x0, tol = ...): # Tolerance is adjusted here.
   x = x0
   diff = x0
   iter = 0
@@ -15,10 +16,10 @@ def approximation(x0, tol = 0.000001):
     diff = abs(x-y)
   print(f"\nConvergence after {iter} iterations")
   return ""
-print(approximation(1.5))
+print(approximation(guess)) #Enter a value here.
 
-# Bisection
-def bisection_method(func, a, b, tol=0.001, max_iter=100):
+# Bisection---------------------------------------------------------------------------
+def bisection_method(func, a, b, tol=..., max_iter=...): #Tolerance and max iterations can be changed here.
     if func(a) * func(b) >= 0:
         raise ValueError("Function must have different signs at a and b")
     iter_count = 0
@@ -33,19 +34,17 @@ def bisection_method(func, a, b, tol=0.001, max_iter=100):
             a = p
     print(f"{iter_count} iterations")        
     return (a + b) / 2.0
-func = lambda x: x**3 + 4*x**2 -10
-print(bisection_method(func, 1, 2))
+func = lambda x:  #Change function here.
+print(bisection_method(func, a value, b value))
 
 
 
 
-# Fixed point
+# Fixed point------------------------------------------------------------------------
 def fixed_point_iteration(p0, tol, N0):
     result = "Failure"
     for i in range(1, N0+1):
-        #p = p0 - p0*p0*p0 - 4*p0*p0 + 10
-        #or
-        #p = math.sqrt(10 - p0*p0*p0)/2
+        #p = enter equation here, where x = p0.
         if math.isnan(p):
             print("\nResult diverges")
             break
@@ -55,26 +54,26 @@ def fixed_point_iteration(p0, tol, N0):
             break
         p0 = p
     print(f"\n{result} after {i} iterations")
-p0 = 1.5
-tol = 0.000001
-N0 = 50
+p0 = ...
+tol = ... # Enter your values here.
+N0 = ...
 fixed_point_iteration(p0, tol, N0)
 
 
 
 
-#NewtonR
+#NewtonR----------------------------------------------------------------------------
 from sympy import cos
 import sympy as sym
 
 
 x = sym.symbols('x')
-exp = cos(x) - x 
+exp =  # Here is the test equation. Enter the expression in terms of x.
 
 derivative1_x = sym.diff(exp, x)
-p0 = 3.14159265/4
-tol = 0.000000000001
-N0 = 23
+p0 = ...
+tol = ... # Enter the relevant values here.
+N0 = ...
 i = 0
 while i <= N0:
   v = derivative1_x.subs(x,p0)
