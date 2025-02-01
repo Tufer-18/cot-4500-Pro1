@@ -1,1 +1,1 @@
-
+This repo requires use of sympy and math modules.
